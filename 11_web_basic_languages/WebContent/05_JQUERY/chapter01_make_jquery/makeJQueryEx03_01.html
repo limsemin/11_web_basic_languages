@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>자바 스크립트의 onload함수 jas</title>
+</head>
+	<script>
+		//스크립트의 실행보다 html이 화면에 보여지는 순서가 느리므로 해당 스크립트의 기능은 동작하지 않는다.
+		//document.getElementById("test").style.backgroundColor="red";
+		
+		//페이지의 dom요소들이 모두 로드가 된 후 실행이 되는 함수
+		window.onload= function(){
+			document.getElementById("test").style.backgroundColor="red";
+		}	
+	</script>
+<body>
+
+	<div id="test">test page</div>
+	<script>
+		document.getElementById("test").style.backgroundColor="red";
+	</script>
+
+
+</body>
+</html>
